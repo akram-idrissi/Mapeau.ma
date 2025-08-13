@@ -1,0 +1,57 @@
+{
+  "diagnostics": {
+    "diagnostic_1": {
+      "ownerType": "user",
+      "ownerId": "user_1",
+      "diagnosticPhotoUrl": "",
+      "scores": {
+        "critere_1": 85,
+        "critere_2": 70,
+        "critere_3": 55,
+        "critere_4": 90,
+        "critere_5": 60
+      },
+      "recommandations": [
+        { "id": "", "barcode": "" },
+        { "id": "", "barcode": "" },
+        { "id": "", "barcode": "" }
+      ]
+    },
+    "diagnostic_2": {
+      "ownerType": "guest", 
+      "ownerId": "pro_1",
+      "client": {
+        "nom": "akram",
+        "prenom": "idrissi",
+        "telephone": "+2126071842"
+      },
+      "diagnosticPhotoUrl": "",
+      "scores": {
+        "critere_1": 75,
+        "critere_2": 65,
+        "critere_3": 40,
+        "critere_4": 80,
+        "critere_5": 50
+      },
+      "recommandations": [
+        { "id": "", "barcode": "" },
+        { "id": "", "barcode": "" },
+        { "id": "", "barcode": "" }
+      ]
+    }
+  },
+
+  "userInfos": {
+    "user_1": {
+      "nom": "amine",
+      "prenom": "amrani"
+    }
+  },
+
+  "proUsers": {
+    "pro_1": {
+      "nom": "ayman",
+      "prenom": "lamrini"
+    }
+  }
+}
