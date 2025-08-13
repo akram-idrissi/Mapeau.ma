@@ -34,13 +34,6 @@ Ce document décrit la structure de la base de données Firestore utilisée pour
 - Contient les données des professionnels.
 - Chaque document est identifié par un `proUserId`.
 
-## Remarques sur la structure
-
-- La collection `diagnostics` est placée à la racine pour faciliter les requêtes globales et éviter les documents trop volumineux.
-- Il est possible d’organiser `diagnostics` en sous-collections dans `userInfos/{userId}` ou `proUsers/{proUserId}`, mais cela complique les requêtes globales.
-- Les données sensibles sont séparées entre collections pour faciliter la gestion des règles de sécurité Firestore (non incluses ici mais à prévoir).
-- Les champs `scores` et `recommandations` sont stockés comme champs simples et tableaux embarqués, pas comme sous-collections.
-
 ## Exemples d’utilisation
 
 - Pour récupérer l’historique complet des diagnostics d’un utilisateur donné, on effectue une requête sur `diagnostics` avec filtre sur `ownerType == "user"` et `ownerId == userId`.
